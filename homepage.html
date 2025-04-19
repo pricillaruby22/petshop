@@ -103,6 +103,41 @@
 			font-size: 16px;
 			color: hotpink;
 		}
+		.rw-launcher {
+         background: url('chatbotgif2.gif') no-repeat !important;
+         background-size: cover !important;
+         background-position: center !important;
+         width:80px !important;
+         height: 80px !important;
+         border-radius: 50% !important;
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         cursor: pointer;
+      }
+
+      .rw-open-launcher__container {
+  display: none !important;
+}
+.rw-close-launcher{
+  display: none !important;
+}
+
+.rw-conversation-container {
+    transform: translateY(-80px) !important; 
+}
+      
+      .rw-header {
+        background-color: navy !important; 
+        color: white !important;
+        font-size: 18px !important;
+        border-radius: 15px 15px 0 0 !important;
+      }
+
+      .rw-client {
+          background-color: navy !important;
+          color: white !important; 
+      }
 	</style>
 
 </head>
@@ -131,6 +166,63 @@
 					<link rel="shortcut icon" href="C:\UIUx\task\images\peticon.png">
 				</button>
 	</div>
+
+	<script>
+		!(function () {
+		  let e = document.createElement("script"),
+			t = document.head || document.getElementsByTagName("head")[0];
+		  (e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+			(e.async = !0),
+			(e.onload = () => {
+			  window.WebChat.default(
+				{
+				  customData: { language: "en" },
+				  socketUrl: "http://localhost:5005",
+				  title: "SSMIET Chatbot",
+				  showMessageDate: true,
+				  params: {
+					storage: "session"
+				  },
+				  showSettings: true,
+				  settingsOptions: [
+					{
+					  label: "Clear",
+					  action: "clearChat"
+					},
+					{
+					  label: "Restart",
+					  action: "restartChat"
+					},
+					{
+					  label: "Close",
+					  action: "closeChat"
+					}
+				  ],
+				  initPayload: "/greet" 
+				},
+				null
+			  );
+	
+			  // Open chatbot automatically after 3 seconds
+			  setTimeout(() => {
+				document.querySelector(".rw-launcher").click();
+			  }, 3000); 
+			}),
+			t.insertBefore(e, t.firstChild);
+		})();
+	
+	
+		function closeChat() {
+				document.querySelector(".rw-conversation-container").style.display = "none";
+			  }
+	  
+		document.addEventListener("click", function (event) {
+		  if (event.target.innerText === "Clear") clearChat();
+		  if (event.target.innerText === "Restart") restartChat();
+		  if (event.target.innerText === "Close") closeChat();
+		});
+	  </script>
+	  
 </body>
 
 </html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods and Treats</title>
+    <!--<link rel="shortcut icon" href="C:\UIUx\task\images\peticon.png">-->
+    <link rel="shortcut icon" href="../petshopwebsite/images/peticon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+         .Nav-container {
+            margin: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #800080;
+            color: white;
+            font-family: Arial;
+        }
+
+        .childContainer {
+            width: 270px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .heading {
+            padding-left: 0px;
+            font-size: 46px;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .image {
+            height: 51px;
+            width: 51px;
+            margin-left: 30px;
+        }
+
+        #navTags {
+            width: 650px;
+            height: 70px;
+            margin-right: 30px;
+        }
+
+        #navTags nav {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 23px;
+            padding-top: 24px;
+        }
+        .nav-container a{
+			color: white;
+			text-decoration: none;
+		}
+		.nav-container a:hover{
+			color: red;
+		}
+        #all-pets {
+            height: 1000px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #all-pets div {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Nav-container">
+        <div class="childContainer">
+            <!--<img src="C:\UIUx\task\images\logo.png" class="image">-->
+            <img src="../petshopwebsite/images/logo.png" class="image">
+            <h1 class="heading">PetLane</h1>
+        </div>
+        <div id="navTags">
+            <nav class="nav-container">
+				<a href="homepage.html">Home</a>
+				<a href="petAdoptionpage.html">Pet Adoption</a>
+				<a href="petProductspage.html">Pet Products</a>
+				<a href="contactUsPage.html">Contact Us</a>
+				<a href="aboutUspage.html">About Us</a>
+			</nav>
+        </div>
+    </div>
+    <!--<select id="option" onclick="getValue()">
+        <option selected disabled>Select which pet do you search?</option>
+        <option value="All">All Pets</option>
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Fish">Fish</option>
+        <option value="Birds">Birds</option>
+        <option value="Farmanimals">Farm Animals</option>
+        <option value="Smallanimals">Small Animals</option>
+    </select>-->
+    <div id="all-pets">
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/cat travel/cat travel carrier.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cat travel carrier</h5>
+                <p class="card-text">A sturdy, well-ventilated carrier for safe transport.</p>
+                <p>Ratings : 4.8 / 5</p>
+                <h2>₹2,500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/cat travel/portable litter box.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Portable litter box</h5>
+                <p class="card-text">Compact, foldable litter box for on-the-go convenience.</p>
+                <p>Rating : 4.5 / 5</p>
+                <h2>₹800/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/cat travel/cat backpack carrier.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cat Backpack carrier</h5>
+                <p class="card-text">Stylish backpack with mesh panels for easy travel.</p>
+                <p style="padding-top: 24px;">Rating : 4.5 / 5</p>
+                <h2>₹3000/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/dog travel/dog travel crate.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dog travel Crate</h5>
+                <p class="card-text">Durable crate with secure locking for safe travels.</p>
+                <p style="padding-top: 20px;">Rating : 4.7 / 5</p>
+                <h2>₹3,500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/dog travel/dog seat belt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 34px;">Dog Seatbelt Harness</h5>
+                <p class="card-text">Adjustable harness that keeps your dog safe in the car.</p>
+                <p style="padding-top: 43px;">Rating : 4 / 5</p>
+                <h2>₹1,200/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/dog travel/water bottle.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Travel Dog Water Bottle</h5>
+                <p class="card-text"> Portable water bottle with a built-in bowl for hydration.</p>
+                <p style="padding-top: 20px;">Rating : 4.5 / 5</p>
+                <h2>₹730/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/Fish/fish tank.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Travel fish Tank</h5>
+                <p class="card-text">Portable tank with filtration for short trips.</p>
+                <p style="padding-top: 43px;">Rating : 4.3 / 5</p>
+                <h2>₹1,500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/Fish/fish bag.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Fish Transport Bag</h5>
+                <p class="card-text">Leak-proof bags for safe transport of fish.</p>
+                <p style="padding-top: 45px;">Ratings : 4.6 / 5</p>
+                <h2>₹500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/Fish/aquarium travel kit.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Aquarium Travel Kit</h5>
+                <p class="card-text">Complete kit for fish care during travel</p>
+                <p style="padding-top: 20px;">Rating : 3.9 / 5</p>
+                <h2>₹2,499/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/bird travel/bird carrier.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Bird Carrier</h5>
+                <p class="card-text">Spacious carrier with perches for safe travel.</p>
+                <p style="padding-top: 20px;">Rating : 4.4 / 5</p>
+                <h2>₹2,000/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/bird travel/bird cage.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 20px;">Portable Bird Cage</h5>
+                <p class="card-text"> Lightweight cage designed for travel.</p>
+                <p style="padding-top: 38px;">Rating : 4 / 5</p>
+                <h2>₹3,000/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/bird travel/water bottle.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Travel Bird Water Bottle</h5>
+                <p class="card-text">Leak-proof water bottle designed for bird cages.</p>
+                <p style="padding-top: 38px;">Rating : 3.5 / 5</p>
+                <h2>₹600/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/farmanimals/transport.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Portable Livestock Transport Box</h5>
+                <p class="card-text">Heavy-duty box for transporting small farm animals.</p>
+                <p style="padding-top: 48px;">Rating : 4.8 / 5</p>
+                <h2>₹7,500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/farmanimals/cooling vest.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top:80px;">Animal Cooling Vest</h5>
+                <p class="card-text">Cooling vest for animals during hot travels.</p>
+                <p style="padding-top: 70px;">Rating : 4.9 / 5</p>
+                <h2>₹2,000/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/farmanimals/first aid.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top:45px;">Farm Animal First Aid Kit</h5>
+                <p class="card-text">Comprehensive first aid kit for on-the-go care.</p>
+                <p style="padding-top: 25px;">Rating : 4.1 / 5</p>
+                <h2>₹1,199/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/smallanimals/travel carriet.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 38px;">Portable Animal Carrier</h5>
+                <p class="card-text">A lightweight, foldable carrier designed for small farm animals like goats, sheep, or rabbits. It features mesh ventilation, a sturdy frame, and a secure latch.</p>
+                <p style="padding-top: 55px;">Rating : 4.5 / 5</p>
+                <h2>₹1,660/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/smallanimals/portable pet bed.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Portable Pet bed</h5>
+                <p class="card-text">A lightweight, foldable bed for pets, providing comfort during travel. It’s washable and features a non-slip base.</p>
+                <p style="padding-top: 14px;">Rating : 4.2 / 5</p>
+                <h2>₹1,500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/smallanimals/Travel treat pouch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 18px;">Travel Treat Pouch</h5>
+                <p class="card-text">A handy pouch for storing treats during travel. It clips onto bags and features a drawstring closure for easy access.</p>
+                <p style="padding-top: 45px;">Rating : 4.5 / 5</p>
+                <h2>₹500/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/smallanimals/bowl.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Collapsible Pet Food Bowl</h5>
+                <p class="card-text">A portable, collapsible bowl for feeding pets on the go. Made from silicone, it’s easy to clean and carry.</p>
+                <p style="padding-top: 38px;">Rating : 4 / 5</p>
+                <h2>₹399/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/dog travel/blanket.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Travel Blanket for Pets</h5>
+                <p class="card-text"> A soft, portable blanket that provides comfort for pets during travel. It’s machine washable and easy to roll up.</p>
+                <p style="padding-top: 38px;">Rating : 4.6 / 5</p>
+                <h2>₹999/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/cat travel/Identification tag.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pet Travel Identification Tags</h5>
+                <p class="card-text">Durable identification tags for pets, customizable with contact information. Essential for safety during travel. </p>
+                <p style="padding-top: 38px;">Rating : 4.8 / 5</p>
+                <h2>₹399/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/travel/cat travel/sunglasses.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pet Travel Sunglasses</h5>
+                <p class="card-text">Protective sunglasses for dogs, designed to shield their eyes from UV rays during outdoor travel.</p>
+                <p style="padding-top: 38px;">Rating : 4 / 5</p>
+                <h2>₹700/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

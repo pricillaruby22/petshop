@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lavender;
+        }
+        .title {
+            text-align: center;
+            font-family: Arial;
+            color: #800080;
+        }
+        .container {
+            height: 500px;
+            width: 900px;
+            margin-top: 40px;
+            font-family: Arial;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 20px 25px black;
+        }
+
+        .form-container {
+            height: 515px;
+            width: 500px;
+            background-color: rgb(240, 240, 253);
+        }
+
+        .details-container {
+            height: 500px;
+            width: 400px;
+            background-color:#800080;
+            color: white;
+            padding-top: 15px;
+        }
+
+        .details-container p {
+            padding-top: 20px;
+        }
+
+        #phone-logo {
+            padding-left: 45px;
+            padding-top: 15px;
+        }
+
+        .phone {
+            height: 50px;
+            width: 220px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .message {
+            height: 50px;
+            width: 295px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .location {
+            height: 80px;
+            width: 320px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-container {
+            height: 40px;
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            margin-left: 120px;
+        }
+
+        .form-container div {
+            height: 90px;
+            width: 190px;
+            margin-left: 45px;
+        }
+
+        table {
+            margin-top: 40px;
+        }
+
+        .input-box {
+            margin-top: 10px;
+            height: 20px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(240, 240, 253);
+        }
+
+        .text-box {
+            width: 300px;
+            height: 100px;
+            resize: none;
+            margin-top: 15px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button {
+            height: 40px;
+            width: 150px;
+            margin-left: 290px;
+            margin-top: 120px;
+            border-radius: 20px;
+            border: none;
+            background-color: #800080;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Reach Out to Us</h1>
+    <p style="color: hotpink; text-align: center; font-size: 20px; font-family: Arial;">We had Love to hear from you
+    <div class="container">
+        <div class="details-container">
+            <h2 style="text-align: center;">Connect With Us</h2>
+            <div class="phone">
+                <img src="images/phone.png" width="35" height="35" id="phone-logo">
+                <p style="text-align: center;">+91 5478 6743 33</p>
+            </div>
+            <br>
+            <div class="message">
+                <img src="images/message.png" width="35" height="35" id="phone-logo">
+                <p style="text-align: center;">petlaneofficial&#64;gmail.com</p>
+            </div>
+            <br>
+            <div class="location">
+                <img src="images/location.png" width="35" height="35" id="phone-logo">
+                <p style="text-align: center;">132 Dartmouth street Boston,Massachusetts 02156<br>United states</p>
+            </div>
+            <br>
+            <div class="image-container">
+                <img src="images/twitter.png" width="40" height="40">
+                <img src="images/insta.png" width="40" height="40">
+                <img src="images/linkedin.png" width="40" height="40">
+            </div>
+        </div>
+        <div class="form-container">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" class="input-box">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" class="input-box">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <label>E-mail</label>
+                            <input type="email" class="input-box">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <label>Phone Number</label>
+                            <input type="tel" class="input-box">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <label>Write Messsage</label>
+                <textarea placeholder="Enter your queries here..." class="text-box"></textarea>
+            </div>
+            <button>Send Message</button>
+        </div>
+    
+    </div>
+</body>
+
+</html>
+
+
+

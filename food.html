@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods and Treats</title>
+    <link rel="shortcut icon" href="C:\UIUx\task\images\peticon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+         .Nav-container {
+            margin: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #800080;
+            color: white;
+            font-family: Arial;
+        }
+
+        .childContainer {
+            width: 270px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .heading {
+            padding-left: 0px;
+            font-size: 46px;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .image {
+            height: 51px;
+            width: 51px;
+            margin-left: 30px;
+        }
+
+        #navTags {
+            width: 650px;
+            height: 70px;
+            margin-right: 30px;
+        }
+
+        #navTags nav {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 23px;
+            padding-top: 24px;
+        }
+        .nav-container a{
+			color: white;
+			text-decoration: none;
+		}
+		.nav-container a:hover{
+			color: red;
+		}
+        #all-pets {
+            height: 1000px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #all-pets div {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Nav-container">
+        <div class="childContainer">
+            <img src="C:\UIUx\task\images\logo.png" class="image">
+            <h1 class="heading">PetLane</h1>
+        </div>
+        <div id="navTags">
+            <nav class="nav-container">
+				<a href="homepage.html">Home</a>
+				<a href="petAdoptionpage.html">Pet Adoption</a>
+				<a href="petProductspage.html">Pet Products</a>
+				<a href="contactUsPage.html">Contact Us</a>
+				<a href="aboutUspage.html">About Us</a>
+			</nav>
+        </div>
+    </div>
+    <!--<select id="option" onclick="getValue()">
+        <option selected disabled>Select which pet do you search?</option>
+        <option value="All">All Pets</option>
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Fish">Fish</option>
+        <option value="Birds">Birds</option>
+        <option value="Farmanimals">Farm Animals</option>
+        <option value="Smallanimals">Small Animals</option>
+    </select>-->
+    <div id="all-pets">
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/catfood/blue-wilderness.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Blue Buffalo Wilderness High Protein Dry Cat Food</h5>
+                <p class="card-text">Made with real chicken, this grain-free food provides a protein-rich diet</p>
+                <p>Ratings : 4.8 / 5</p>
+                <h2>₹3,299/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/birdfood/harrison.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Harrison's Organic Bird Food</h5>
+                <p class="card-text">A high-quality, organic pellet option suitable for parrots and other pet birds.</p>
+                <p>Rating : 4.5 / 5</p>
+                <h2>₹1,245/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/farmanimalsfood/mannapro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Manna Pro Goat</h5>
+                <p class="card-text">Specifically for goats, it supports growth and provides balanced nutrients.</p>
+                <p style="padding-top: 24px;">Rating : 4.5 / 5</p>
+                <h2>₹1,494/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/catfood/friskiesmix.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Friskies Party Mix Cat Treats</h5>
+                <p class="card-text">Variety of flavors and shapes,These treats are affordable and generally well-liked by cats.</p>
+                <p style="padding-top: 20px;">Rating : 4.7 / 5</p>
+                <h2>₹1,250/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/fishfood/tetramin.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 34px;">TetraMin Tropical Flakes</h5>
+                <p class="card-text">A popular choice for tropical fish, offering complete nutrition with vitamins and minerals.</p>
+                <p style="padding-top: 43px;">Rating : 4 / 5</p>
+                <h2>₹664/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/birdfood/kaytee.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kaytee Forti-Diet Pro Health Bird Food</h5>
+                <p class="card-text"> Added probiotics for digestive support, great for various bird species.</p>
+                <p style="padding-top: 20px;">Rating : 4.5 / 5</p>
+                <h2>₹730/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/farmanimalsfood/mannapro2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Manna Pro Goat Treats</h5>
+                <p class="card-text">Designed for goats, these treats come in flavors like apple and make a fun, nutritious snack.</p>
+                <p style="padding-top: 43px;">Rating : 4.3 / 5</p>
+                <h2>₹996/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/catfood/hillsciencediet.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Hill's Science Diet Indoor Cat Food</h5>
+                <p class="card-text">High-Quality Protein and natural Fiber</p>
+                <p style="padding-top: 45px;">Ratings : 4.6 / 5</p>
+                <h2>₹3,735/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/fishfood/omegone.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Omega One Super Color Flakes</h5>
+                <p class="card-text">Enhances the color of fish with natural ingredients, rich in Omega-3 and -6 fatty acids.</p>
+                <p style="padding-top: 20px;">Rating : 3.9 / 5</p>
+                <h2>₹930/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/catfood/purebites.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">PureBites Freeze-Dried Cat Treats</h5>
+                <p class="card-text">Made with single-ingredient, freeze-dried meats (like chicken, salmon, or shrimp)</p>
+                <p style="padding-top: 20px;">Rating : 4.4 / 5</p>
+                <h2>₹664/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/fishfood/daphnia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 20px;">Daphnia(Water Fleas)</h5>
+                <p class="card-text">These small crustaceans are a nutritious treat for fish, providing essential nutrients.</p>
+                <p style="padding-top: 38px;">Rating : 4 / 5</p>
+                <h2>₹581/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/farmanimalsfood/mealfood.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Happy Hen Treats(Chickens)</h5>
+                <p class="card-text">These mealworm treats are great for encouraging natural foraging behavior in chickens.</p>
+                <p style="padding-top: 38px;">Rating : 3.5 / 5</p>
+                <h2>₹850/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/dogfood/zukes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Zuke's Mini Naturals Dog Treats</h5>
+                <p class="card-text">Small, soft treats ideal for training, made with natural ingredients and no corn, wheat, or soy.</p>
+                <p style="padding-top: 48px;">Rating : 4.8 / 5</p>
+                <h2>₹830/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/birdfood/millet.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top:80px;">Millet Spray</h5>
+                <p class="card-text">A popular treat that’s easy for birds to eat, providing a fun foraging experience.</p>
+                <p style="padding-top: 70px;">Rating : 4.9 / 5</p>
+                <h2>₹415/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/dogfood/dogfood1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Blue Buffalo Life Protection Formula Dog Food</h5>
+                <p class="card-text">This includes high-quality proteins and whole grains, along with fruits and vegetables for balanced nutrition.</p>
+                <p style="padding-top: 25px;">Rating : 4.1 / 5</p>
+                <h2>₹5,394/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/farmanimalsfood/purina.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 38px;">Purina Layena Crumbles(chicken)</h5>
+                <p class="card-text">Specially designed for laying hens, providing complete nutrition for egg production.</p>
+                <p style="padding-top: 55px;">Rating : 4.5 / 5</p>
+                <h2>₹1,660/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Buy now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/smallanimalsfood/oxbow2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">OxBow Simple Rewards Baked Treats</h5>
+                <p class="card-text">Natural treats for rabbits and guinea pigs, available in flavors like apple and banana.</p>
+                <p style="padding-top: 14px;">Rating : 4.2 / 5</p>
+                <h2>₹498/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Adapt now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/smallanimalsfood/kayetee.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="padding-top: 18px;">Kaytee Forti-Diet Pro Health Hamster Food</h5>
+                <p class="card-text">A balanced diet for hamsters that includes pellets, grains, and seeds</p>
+                <p style="padding-top: 45px;">Rating : 4.5 / 5</p>
+                <h2>₹830/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Adapt now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/dogfood/greenies.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Greenies Dental Dog Treats</h5>
+                <p class="card-text">Great for dental health, these treats help clean teeth and freshen breath.</p>
+                <p style="padding-top: 38px;">Rating : 4 / 5</p>
+                <h2>₹2,075/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Adapt now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/smallanimalsfood/kayete.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kaytee Yogurt Chips</h5>
+                <p class="card-text">Small yogurt treats loved by hamsters and other small animals for their taste and texture.</p>
+                <p style="padding-top: 38px;">Rating : 4.6 / 5</p>
+                <h2>₹581/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Adapt now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/smallanimalsfood/oxbow.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Oxbow Essentials Adult Rabbit Food</h5>
+                <p class="card-text">A pellet food specifically formulated for adult rabbits, made from timothy hay for fiber.</p>
+                <p style="padding-top: 38px;">Rating : 4.8 / 5</p>
+                <h2>₹996/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Adapt now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/foods/dogfood/proplan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Puina Pro Plan Savor Adult Shredded Blend</h5>
+                <p class="card-text">Features real meat as the first ingredient and includes live probiotics for digestive health.</p>
+                <p style="padding-top: 38px;">Rating : 4 / 5</p>
+                <h2>₹4,565/-</h2>
+                <a href="#" class="btn btn-primary" style="margin-top: 20px;">Adapt now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
